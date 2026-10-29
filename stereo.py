@@ -115,7 +115,7 @@ def calibrate(pair_name):
         flags=flags,
     )
 
-    print(f"\n=== RESULT ({cfg['label']}) ===")
+    print(f"\n RESULT ({cfg['label']}) ===")
     print(f"RMS reprojection error: {ret:.4f} px")
     print("Rotation R:\n", R)
     print("Translation T (mm):\n", T)
