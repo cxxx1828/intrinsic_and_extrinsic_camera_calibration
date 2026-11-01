@@ -65,7 +65,7 @@ def main():
 
     depth_sensor = profile.get_device().first_depth_sensor()
     if depth_sensor.supports(rs.option.emitter_enabled):
-        depth_sensor.set_option(rs.option.emitter_enabled, 1)  # emitter ON helps stereo matching on flat surfaces
+        depth_sensor.set_option(rs.option.emitter_enabled, 1)  
 
     print("Q = quit")
 
@@ -85,7 +85,6 @@ def main():
 
             disparity = stereo.compute(left_rect, right_rect).astype(np.float32) / 16.0
 
-            # normalize for display and apply a color map (JET: near=red/warm, far=blue/cool)
             disp_norm = cv2.normalize(disparity, None, 0, 255, cv2.NORM_MINMAX)
             disp_norm = disp_norm.astype(np.uint8)
             disp_color = cv2.applyColorMap(disp_norm, cv2.COLORMAP_JET)
