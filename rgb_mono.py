@@ -21,9 +21,8 @@ from common import (
     save_mono_yaml,
 )
 
-# ---- Chessboard parameters (must match the generated PDF board) ----
-COLS_INNER = 9      # inner corners across width
-ROWS_INNER = 6      # inner corners across height
+COLS_INNER = 9     
+ROWS_INNER = 6      
 SQUARE_SIZE_MM = 29.0
 
 IMG_DIR = "calib_images/rgb"
@@ -65,12 +64,10 @@ def calibrate():
         objpoints, imgpoints, img_shape, None, None
     )
 
-    print("\n=== RESULT ===")
     print(f"RMS reprojection error: {ret:.4f} px")
     print("Camera matrix K:\n", K)
     print("Distortion coeffs:\n", dist)
 
-    # per-image reprojection error (to spot bad samples)
     errors = calculate_reprojection_error(objpoints, imgpoints, rvecs, tvecs, K, dist)
     for fname, err in zip(images, errors):
         print(f"  {os.path.basename(fname)}: {err:.4f} px")
