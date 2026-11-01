@@ -25,9 +25,8 @@ from common import (
     save_mono_yaml,
 )
 
-# ---- Chessboard parameters (must match the generated PDF board) ----
-COLS_INNER = 9      # inner corners across width
-ROWS_INNER = 6      # inner corners across height
+COLS_INNER = 9      
+ROWS_INNER = 6      
 SQUARE_SIZE_MM = 29.0
 
 LEFT_IMG_DIR = "calib_images/left_ir"
