@@ -1,6 +1,5 @@
 """
 Mono calibration for RealSense D457 (RGB stream) using a 9x6 chessboard, 29mm squares.
-
 Usage:
     python3 rgb_mono.py calibrate -> compute calibration from captured images
 
