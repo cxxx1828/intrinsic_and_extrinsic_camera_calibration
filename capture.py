@@ -1,5 +1,5 @@
 """
-Synchronized calibration image capture for RealSense D457.
+Synchronized calibration image capture for RealSense D457
 Captures RGB, left IR, and right IR from the same frameset.
 
 Usage:
