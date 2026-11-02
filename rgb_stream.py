@@ -1,7 +1,6 @@
 """
 Normal RGB camera stream from RealSense D457, undistorted using calibration .yaml files.
 Just a plain color video feed, nothing fancy 
-
 Usage:
     python3 rgb_stream.py
 
