@@ -2,7 +2,7 @@
 Synchronized calibration image capture for RealSense D457
 Captures RGB, left IR, and right IR from the same frameset.
 
-Usage:
+to start:
     python3 capture.py
 
 SPACE = save synchronized triplet, Q = quit
