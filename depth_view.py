@@ -3,7 +3,7 @@ Combined stereo depth view for RealSense D457, computed from your own
 calibration (not the camera's built-in depth). Fuses left+right IR into
 a single colorized disparity/depth image.
 
-Usage:
+to start:
     python3 depth_view.py
 
 Press Q to quit.
