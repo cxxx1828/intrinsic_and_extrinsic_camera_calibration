@@ -5,7 +5,6 @@ a single colorized disparity/depth image.
 
 to start:
     python3 depth_view.py
-
 Press Q to quit.
 """
 
